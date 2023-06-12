@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "members": [
+        "group:gcp-data-lead@tdshop.io"
+      ],
+      "role": "roles/iam.serviceAccountTokenCreator"
+    }
+  ],
+  "version": 1
+}

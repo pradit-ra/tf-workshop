@@ -1,0 +1,212 @@
+bindings:
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: organizations/1008661768692/roles/BQScheduleQuery
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: organizations/1008661768692/roles/StorageBucketList
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/aiplatform.admin
+- members:
+  - serviceAccount:service-248488837704@gcp-sa-aiplatform.iam.gserviceaccount.com
+  role: roles/aiplatform.serviceAgent
+- members:
+  - serviceAccount:service-248488837704@gcp-sa-artifactregistry.iam.gserviceaccount.com
+  role: roles/artifactregistry.serviceAgent
+- members:
+  - serviceAccount:vertex-ai-notebook@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/bigquery.dataEditor
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/bigquery.dataOwner
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  - group:gcp-product@tdshop.io
+  - serviceAccount:data-team-looker@tdshop-data-internal.iam.gserviceaccount.com
+  - serviceAccount:dataops-cloud-functions@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/bigquery.dataViewer
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  - group:gcp-product@tdshop.io
+  - serviceAccount:data-team-looker@tdshop-data-internal.iam.gserviceaccount.com
+  - serviceAccount:dataops-cloud-functions@tdshop-data-internal.iam.gserviceaccount.com
+  - serviceAccount:vertex-ai-notebook@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/bigquery.jobUser
+- members:
+  - serviceAccount:vertex-ai-notebook@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/bigquery.readSessionUser
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  - serviceAccount:dataops-bq-purchase-management@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/bigquery.resourceAdmin
+- members:
+  - serviceAccount:dataops-cloud-functions@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/bigquery.resourceViewer
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  - group:gcp-product@tdshop.io
+  - serviceAccount:dataops-cloud-functions@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/bigquery.user
+- members:
+  - serviceAccount:service-248488837704@gcp-sa-bigquerydatatransfer.iam.gserviceaccount.com
+  role: roles/bigquerydatatransfer.serviceAgent
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/browser
+- members:
+  - serviceAccount:248488837704@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:service-248488837704@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/cloudfunctions.developer
+- members:
+  - serviceAccount:dataops-cloud-scheduler@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/cloudfunctions.invoker
+- members:
+  - serviceAccount:service-248488837704@gcf-admin-robot.iam.gserviceaccount.com
+  role: roles/cloudfunctions.serviceAgent
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  - serviceAccount:dataops-cloud-scheduler@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/cloudscheduler.admin
+- members:
+  - serviceAccount:service-248488837704@gcp-sa-cloudscheduler.iam.gserviceaccount.com
+  role: roles/cloudscheduler.serviceAgent
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/cloudsql.admin
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/compute.networkUser
+- members:
+  - serviceAccount:service-248488837704@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/compute.viewer
+- members:
+  - serviceAccount:service-248488837704@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/datacatalog.admin
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/datacatalog.viewer
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/dataflow.developer
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/dataproc.admin
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/dataproc.viewer
+- members:
+  - group:gcp-data-lead@tdshop.io
+  - group:gcp-infra-cloud@tdshop.io
+  - serviceAccount:248488837704-compute@developer.gserviceaccount.com
+  - serviceAccount:248488837704@cloudservices.gserviceaccount.com
+  - serviceAccount:tdshop-data-internal@appspot.gserviceaccount.com
+  role: roles/editor
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/iam.serviceAccountUser
+- members:
+  - group:gcp-data-lead@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/iap.tunnelResourceAccessor
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/logging.viewer
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/mapsadmin.viewer
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/monitoring.viewer
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/notebooks.admin
+- members:
+  - serviceAccount:vertex-ai-notebook@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/notebooks.runner
+- members:
+  - serviceAccount:service-248488837704@gcp-sa-notebooks.iam.gserviceaccount.com
+  role: roles/notebooks.serviceAgent
+- members:
+  - serviceAccount:service-248488837704@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - group:gcp-data-lead@tdshop.io
+  role: roles/resourcemanager.projectIamAdmin
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/run.developer
+- members:
+  - serviceAccount:service-248488837704@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  role: roles/run.viewer
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/secretmanager.viewer
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/servicemanagement.quotaAdmin
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  - serviceAccount:terraform@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/storage.admin
+- condition:
+    description: Read/Write access to GCS bucket tdshop-data-internal-dataops-sandbox
+    expression: resource.name.startsWith("projects/_/buckets/tdshop-data-internal-dataops-sandbox")
+    title: w-tdshop-data-internal-dataops-sandbox
+  members:
+  - serviceAccount:vertex-ai-notebook@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+- condition:
+    description: Read-only Access on GCS bucket with prefix tdshop-dataops only
+    expression: resource.name.startsWith("projects/_/buckets/tdshop-dataops")
+    title: r-tdshop-dataops
+  members:
+  - group:gcp-data-analytic@tdshop.io
+  - group:gcp-data-engineer@tdshop.io
+  - group:gcp-data-scientist@tdshop.io
+  - serviceAccount:vertex-ai-notebook@tdshop-data-internal.iam.gserviceaccount.com
+  role: roles/storage.objectViewer
+- members:
+  - group:gcp-data-engineer@tdshop.io
+  role: roles/storagetransfer.user
+etag: BwX9qZ4QXuY=
+version: 3
