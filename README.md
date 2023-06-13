@@ -28,7 +28,7 @@ gcloud auth application-default login
 
 - branch: feature/AI-1057-module-complex-vars
 
-- branch: feature/AI-1057-gcs-backend-stage
+- branch: feature/AI-1057-gcs-backend-state
 
 ## Useful resources
 
