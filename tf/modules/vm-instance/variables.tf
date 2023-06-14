@@ -35,3 +35,11 @@ variable "ssh_public_keyfile" {
   description = "ssh public key added into the instance"
   default     = ""
 }
+
+variable "ssh_key" {
+  type = object({
+    username   = string
+    public_key = string
+  })
+  description = "ssh_key"
+}

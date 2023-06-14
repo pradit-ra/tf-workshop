@@ -37,24 +37,31 @@ resource "google_compute_firewall" "allow_ssh" {
 # # # Next create VM in the vpc network
 
 module "vm-bastion" {
-  source             = "./modules/vm-instance"
-  name               = "${var.prefix}-bastion"
-  is_private         = false
-  network_name       = google_compute_network.net.name
-  subnet             = google_compute_subnetwork.pub_subnet.id
-  ssh_public_keyfile = "../.ssh/ed25519.pub"
-  firewall_tags      = google_compute_firewall.allow_ssh.target_tags
+  source       = "./modules/vm-instance"
+  name         = "${var.prefix}-bastion"
+  is_private   = false
+  network_name = google_compute_network.net.name
+  subnet       = google_compute_subnetwork.pub_subnet.id
+  ssh_key = {
+    username   = "pradit_ra"
+    public_key = file("../.ssh/ed25519.pub")
+  }
+  firewall_tags = google_compute_firewall.allow_ssh.target_tags
 }
 
 
 module "vm-private" {
-  source             = "./modules/vm-instance"
-  name               = "${var.prefix}-private"
-  is_private         = true
-  network_name       = google_compute_network.net.name
-  subnet             = google_compute_subnetwork.pri_subnet.id
-  ssh_public_keyfile = "../.ssh/ed25519.pub"
-  firewall_tags      = google_compute_firewall.allow_ssh.target_tags
+  source       = "./modules/vm-instance"
+  name         = "${var.prefix}-private"
+  is_private   = true
+  network_name = google_compute_network.net.name
+  subnet       = google_compute_subnetwork.pri_subnet.id
+  ssh_key = {
+    username   = "pradit_ra"
+    public_key = file("../.ssh/ed25519.pub")
+  }
+
+  firewall_tags = google_compute_firewall.allow_ssh.target_tags
 }
 
 

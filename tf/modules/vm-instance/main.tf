@@ -25,7 +25,7 @@ resource "google_compute_instance" "vm" {
 
 resource "google_compute_project_metadata" "pub_key" {
   metadata = {
-    ssh-keys = file(var.ssh_public_keyfile)
+    ssh-keys = "${var.ssh_key.username}:${var.ssh_key.public_key}"
   }
 }
 
