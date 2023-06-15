@@ -5,6 +5,12 @@
         "group:gcp-data-lead@tdshop.io"
       ],
       "role": "roles/iam.serviceAccountTokenCreator"
+    },
+    {
+      "members": [
+        "group:gcp-data-engineer@tdshop.io"
+      ],
+      "role": "roles/iam.serviceAccountTokenCreator"
     }
   ],
   "version": 1
