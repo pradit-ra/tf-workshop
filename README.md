@@ -2,10 +2,10 @@
 
 ## Prerequitsite
 
-Install Terraform and Terragrant
+Install Terraform
 
 ```bash
-brew install tfenv terragrant && \
+brew install tfenv && \
     tfenv install 1.4.6 && \
     tfenv use 1.4.6
 ```
